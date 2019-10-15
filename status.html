@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Đây là trang cho phép hiển thị trạng thái thi đấu -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./status.css">
+    <title>Trạng thái trận đấu</title>
+    <style>
+        button {
+            background-color: #4ae153;
+            width: 640px;
+            height: 30px;
+            text-align: center;
+        }
+        
+        table {
+            border: gray;
+            width: 640px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="getRequest()">Get Request</button>
+    <table>
+        <tr>
+            <td>Điểm tile Team1: <span id="pointTeam1"></span></td>
+            <td>Điểm tile Team2: <span id="pointTeam2"></span></td>
+        </tr>
+    </table>
+    <br><br>
+    <script src="./status.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+#game-board {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    /* width = height = length_map x 30 + 40 */
+}
+
+.black {
+    background-color: darkgray;
+}
+
+.square {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.checker {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* các ô mà có vị trí của agent của đội 1 sẽ có màu red */
+
+.checker-red {
+    background-color: rgb(245, 76, 76);
+}
+
+
+/* các ô mà có vị trí chiếm bởi agent của đội 2 sẽ có màu blue */
+
+.checker-blue {
+    background-color: rgb(46, 46, 221);
+}
+
+
+/* các ô có agent của đội 1 sẽ có màu red strong */
+
+.checker-red-strong {
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+/* các ô có agent của đội 2 sẽ có màu blue strong */
+
+.checker-blue-strong {
+    background-color: blue;
+    border-radius: 50%;
+}
